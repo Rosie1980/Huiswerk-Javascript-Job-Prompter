@@ -124,4 +124,6 @@ else if (departmentInput === "customer-service") {
     console.log("Customer-Service is een leuke afdeling om te werken. Er werken op dit moment " + departments["customer-service"].numberOfEmployees + " medewerkers.");}
 
 /*Opdracht 4b*/
-const jobInfo = prompt("Je koos " + departmentInput + " over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.")
+/*const jobInfo = prompt("Je koos " + departmentInput + "over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.")*/
+
+/*Opdracht 4c*/
