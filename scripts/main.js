@@ -72,3 +72,56 @@ const departments = {
 }
 
 console.log(departments);
+
+/*Opdracht 1a*/
+console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers");
+
+/*Opdracht 1b*/
+console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description);
+
+/*Opdracht 1c*/
+console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers");
+
+/*Opdracht 1d*/
+console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description);
+
+/*Opdracht 2a*/
+const departmentInput = prompt ("Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]");
+console.log(departmentInput);
+
+/*Opdracht 2b en 2c*/
+if (departmentInput === "marketing") {
+    console.log("Je koos Marketing. " + departments.marketing.description);}
+else if (departmentInput === "sales") {
+    console.log("Je koos Sales. " + departments.sales.description);}
+else if (departmentInput === "customer-service") {
+console.log("Je koos Customer-Service. " + departments["customer-service"].description);}
+else {
+    console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");}
+
+/*Opdracht 3a*/
+/*const jobTitel = prompt("Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in." + " 0 " + departments.marketing.jobs[0].title + " 1 " + departments.marketing.jobs[1].title + " 2 " +  departments.marketing.jobs[2].title + " 3 " + departments.marketing.jobs[3].title);
+console.log(jobTitel);*/
+
+/*Opdracht 3b en 3c*/
+/*if (jobTitel === "0") {
+    console.log("Je koos Marketing Manager. Een uitdagende rol! " + departments.marketing.jobs[0].description);}
+else if (jobTitel === "1") {
+    console.log("Je koos Digital Marketing Specialist. Een uitdagende rol! " + departments.marketing.jobs[1].description);}
+else if (jobTitel === "2") {
+    console.log("Je koos Contentmarketeer. Een uitdagende rol! " + departments.marketing.jobs[2].description);}
+else if (jobTitel === "3") {
+    console.log("Je koos Branding Agent. Een uitdagende rol! " + departments.marketing.jobs[3].description);}
+else {
+    console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");}*/
+
+/*Opdracht 4a*/
+if (departmentInput === "marketing") {
+console.log("Marketing is een leuke afdeling om te werken. Er werken op dit moment " + departments.marketing.numberOfEmployees + " medewerkers.")}
+else if (departmentInput === "sales") {
+    console.log("Sales is een leuke afdeling om te werken. Er werken op dit moment " + departments.sales.numberOfEmployees + " medewerkers.")}
+else if (departmentInput === "customer-service") {
+    console.log("Customer-Service is een leuke afdeling om te werken. Er werken op dit moment " + departments["customer-service"].numberOfEmployees + " medewerkers.");}
+
+/*Opdracht 4b*/
+const jobInfo = prompt("Je koos " + departmentInput + " over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.")
